@@ -13,6 +13,9 @@ app.use(express.json());
 // app.use(express.urlencoded({ extended: true }));
 
 mongoose.connect("mongodb://127.0.0.1:27017/postDB");
+mongoose.connect(
+  "mongodb://trident:yMf25toKWG4Dqevi@ac-1shlg6o-shard-00-00.ryg6kpw.mongodb.net:27017,ac-1shlg6o-shard-00-01.ryg6kpw.mongodb.net:27017,ac-1shlg6o-shard-00-02.ryg6kpw.mongodb.net:27017/posts?ssl=true&replicaSet=atlas-zt8y5n-shard-0&authSource=admin&retryWrites=true&w=majority"
+);
 
 const userSchema = new mongoose.Schema({
   name: { type: String, required: true },
