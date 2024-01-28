@@ -373,6 +373,6 @@ app.post("/login", function (req, res) {
 
 app.all("/", (req, res) => {
   console.log("Just got a request!");
-  res.send("Yo!");
+  res.send("Yoooooooooo!");
 });
 app.listen(process.env.PORT || 3000);
